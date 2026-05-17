@@ -196,3 +196,46 @@ h2{
   color: #e86f8a;
   font-size: 30px;
 }
+
+.footer{
+  background-color: #e86f8a;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+}
+
+.footer-links {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.copy {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.9;
+}
