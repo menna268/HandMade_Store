@@ -10,7 +10,7 @@
   <!--This Is Header-->
   <header>
     <div class="logo">
-    <img src="images/logo.png" alt="HandMade Logo">
+    <img src="images/Nlogo.png" alt="HandMade Logo">
     </div> <!--Logo Here-->
      
     <ul class="nav_links">
@@ -28,7 +28,7 @@
     <img class="hero-image" src="images/imagestor.png" alt="image Store">
     <!--This Is Navigation-->
   <nav>
-    <ul>
+    <ul class="links"> 
     <li><a href="#">Dresses</a></li>
     <li><a href="#">Bags</a></li>
     <li><a href="#">Accessories</a></li>
@@ -37,91 +37,66 @@
     </ul>
   </nav>
     <!--Form Becouse Search Bar-->
-    <form>
+    <form class="searchbar">
       <input type="search" name="search" placeholder="search">
       <button type="submit">Search</button>
     </form>
     <!--This is Section-->
-    <section>
-      <!--Title in The Section-->
-      <h2>New Arrivals</h2>
-      <!--dress article-->
-      <article class="dress">
-        <img src="images/dresses/dress.png" alt="Handmade blue dress" width="70px" height="70px">
-        <h3>Dress</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <button type="button">Buy Now</button>
-        <p><strong>Price:$50</strong></p>
-      </article>
-      <hr>
-      <!--Bag article-->
-      <article class="bag">
-        <img src="images/bags/bag.png" alt="Handmade red bag" width="70px" height="70px">
-        <h3>Bag</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <button type="button">Buy Now</button>
-        <p><strong>Price:$50</strong></p>
-      </article>
-      <hr>
-      <!--candle article-->
-      <article class="can">
-        <img src="images/candles/candel.png" alt="Handmade Candel" width="70px" height="70px">
-        <h3>Candle</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <button type="button">Buy Now</button>
-        <p><strong>Price:$50</strong></p>
-      </article>
-      <hr>
-      <!--Home Decor article-->
-      <article class="decor">
-        <img src="images/Home Decors/decor.png" alt="Handmade Home Decor" width="70px" height="70px">
-        <h3>Home Decor</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <button type="button">Buy Now</button>
-        <p><strong>Price:$50</strong></p>
-      </article>
-    </section>
+  <section class="products">
+  <h2>New Arrivals</h2>
+
+  <div class="products-grid">
+
+    <article class="card">
+      <img src="images/dresses/dress.png" alt="Handmade blue dress">
+      <h3>Dress</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="price"><strong>$50</strong></p>
+      <button>Buy Now</button>
+    </article>
+
+    <article class="card">
+      <img src="images/bags/bag.png" alt="Handmade red bag">
+      <h3>Bag</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="price"><strong>$50</strong></p>
+      <button>Buy Now</button>
+    </article>
+
+    <article class="card">
+      <img src="images/candles/candel.png" alt="Handmade Candle">
+      <h3>Candle</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="price"><strong>$50</strong></p>
+      <button>Buy Now</button>
+    </article>
+
+    <article class="card">
+      <img src="images/Home Decors/decor.png" alt="Handmade Home Decor">
+      <h3>Home Decor</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="price"><strong>$50</strong></p>
+      <button>Buy Now</button>
+    </article>
+
+  </div>
+</section>
   </main>
    <!--Footer-->
-   <footer>
+   <footer class="footer">
+  <h3>HandMade Store</h3>
 
-  <section>
-    <h3>HandMade Store</h3>
-    <p>Creative handmade marketplace</p>
-  </section>
+  <p>Creative handmade marketplace</p>
 
-  <section>
-    <h4>Quick Links</h4>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Become a Seller</a></li>
-    </ul>
-  </section>
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
 
-  <section>
-    <h4>Sellers</h4>
-    <ul>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Policy</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h4>Help</h4>
-    <ul>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Shipping</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </section>
-
-  <p>Facebook | Instagram | TikTok | Pinterest</p>
-
-  <p>&copy; 2026 HandMade Store | Privacy | Terms</p>
-
+  <p class="copy">
+    &copy; 2026 HandMade Store
+  </p>
 </footer>
 
 </body>
