@@ -1,24 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: 'Times New Roman', Times, serif;
+body {
+  font-family: "Times New Roman", Times, serif;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background-color: #ffffff;
-  border-bottom: 3px solid #ddd;
+  padding: 15px 20px;
   height: 50px;
 }
 
-.logo img{
-  width: 50%;
+.logo img {
+  width: 70%;
   height: 50%;
   border-radius: 50%;
   object-fit: contain;
@@ -26,15 +24,25 @@ header{
   transition: 0.3s;
 }
 
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-.nav_links{
+.nav_links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
   text-decoration: none;
   color: #333;
   font-size: 18px;
@@ -42,10 +50,9 @@ header{
   transition: 0.3s;
 }
 
-.nav_links li a:hover{
- color: #e86f8a;
+.nav_links li a:hover {
+  color: #e86f8a;
 }
-
 
 .login-btn {
   text-decoration: none;
@@ -60,32 +67,31 @@ header{
   background-color: #e86f8a;
 }
 
-.hero-image{
+.hero-image {
   width: 99%;
   height: 420px;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: 0.4s;
   object-fit: cover;
   object-position: center;
   transition: transform 0.4s ease;
 }
 
-.hero-image:hover{
+.hero-image:hover {
   transform: scale(1.01);
 }
 
-.links{
+.links {
   display: flex;
   list-style: none;
   gap: 80px;
   padding: 50px;
   justify-content: center;
-  
 }
 
-.links li a{
+.links li a {
   text-decoration: none;
   font-size: 18px;
   color: #fff;
@@ -94,15 +100,15 @@ header{
   border-radius: 20px;
   transition: all 0.4s ease;
   display: inline-block;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.links li a:hover{
+.links li a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(232,111,138,0.6);
+  box-shadow: 0 0 20px rgba(232, 111, 138, 0.6);
 }
 
-.searchbar{
+.searchbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +116,7 @@ header{
   margin: 20px auto;
 }
 
-.searchbar input{
+.searchbar input {
   width: 100%;
   max-width: 400px;
   padding: 10px 15px;
@@ -118,7 +124,7 @@ header{
   border-radius: 15px;
   outline: none;
   font-size: 16px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   height: 50px;
 }
 
@@ -131,7 +137,7 @@ header{
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .searchbar button:hover {
@@ -151,13 +157,13 @@ header{
   border-radius: 15px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -188,8 +194,7 @@ header{
   transform: scale(1.05);
 }
 
-
-h2{
+h2 {
   margin-left: 30px;
   margin-top: 20px;
   padding: 15px;
@@ -197,7 +202,7 @@ h2{
   font-size: 30px;
 }
 
-.footer{
+.footer {
   background-color: #e86f8a;
   color: white;
   text-align: center;
