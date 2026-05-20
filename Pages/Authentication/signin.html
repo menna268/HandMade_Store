@@ -13,27 +13,53 @@
 
         <div class="form-section">
           <h2>Create Account</h2>
-          <form action="../../index.html">
+          <form>
             <div class="input_group">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Name" autofocus />
-            
-            
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Email" required />
-            
-            
-            <label for="pass">Password</label>
-            <input id="pass" type="password" name="password" placeholder="Password" required/>
+              <label for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+                autofocus
+              />
+
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+
+              <label for="pass">Password</label>
+              <input
+                id="pass"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
             </div>
             <button type="submit">Create Account</button>
           </form>
           <p>
-          Already have an account?
-          <a href="login.html">Login</a>
-        </p>
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
         </div>
       </div>
     </main>
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        localStorage.setItem("user", "loggedIn");
+
+        window.location.href = "../../index.html";
+      });
+    </script>
+    <script src="../../main.js"></script>
   </body>
 </html>

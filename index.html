@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Handmade Marketplace</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!--This Is Header-->
@@ -24,6 +28,18 @@
       <div class="right-side">
         <a href="Pages/Authentication/login.html" class="login-btn">Login</a>
         <a href="Pages/Authentication/signin.html" class="login-btn">Sign Up</a>
+
+        
+
+        <div class="user-icons" id="userIcons">
+          <a href="Pages/cart/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            
+          </a>
+
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
       </div>
     </header>
 
@@ -57,7 +73,9 @@
             <p>Lorem ipsum dolor sit amet.</p>
             <p class="price"><strong>$50</strong></p>
             <button
-              onclick="window.location.href = 'Pages/Product_Details/dress.html'"
+              onclick="
+                window.location.href = 'Pages/Product_Details/dress.html'
+              "
             >
               Buy Now
             </button>
@@ -81,7 +99,9 @@
             <p>Lorem ipsum dolor sit amet.</p>
             <p class="price"><strong>$50</strong></p>
             <button
-              onclick="window.location.href = 'Pages/Product_Details/candel.html'"
+              onclick="
+                window.location.href = 'Pages/Product_Details/candel.html'
+              "
             >
               Buy Now
             </button>
@@ -93,7 +113,9 @@
             <p>Lorem ipsum dolor sit amet.</p>
             <p class="price"><strong>$50</strong></p>
             <button
-              onclick="window.location.href = 'Pages/Product_Details/home_decore.html'"
+              onclick="
+                window.location.href = 'Pages/Product_Details/home_decore.html'
+              "
             >
               Buy Now
             </button>
@@ -115,5 +137,6 @@
 
       <p class="copy">&copy; 2026 HandMade Store</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

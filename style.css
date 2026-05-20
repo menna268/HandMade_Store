@@ -46,6 +46,7 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+  justify-content: flex-end;
 }
 
 .nav_links {
@@ -256,6 +257,45 @@ h2 {
   font-size: 12px;
   opacity: 0.9;
 }
+
+.logout-btn {
+  padding: 20px;
+  background-color: #e86f8a;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  display: none; 
+}
+
+.logout-btn:hover {
+  background-color: #d94f68;
+  transform: scale(1.05);
+}
+
+.user-icons {
+  padding: 40px;
+  display: none;
+  gap: 35px;
+  align-items: center;
+  color: #e86f8a;
+}
+
+.user-icons i {
+  color:#e86f8a;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-icons i:hover {
+  color: #d94f68;
+}
+
+
 
 @media (max-width: 768px) {
 

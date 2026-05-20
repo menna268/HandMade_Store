@@ -6,6 +6,10 @@
     <title>Accessories</title>
     <link rel="stylesheet" href="../../CSS/productditails.css" />
     <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!--This Is Header-->
@@ -23,8 +27,19 @@
       </div>
 
       <div class="right-side">
-        <a href="#" class="login-btn">Login</a>
-        <a href="#" class="login-btn">Sign Up</a>
+        <a href="Pages/Authentication/login.html" class="login-btn">Login</a>
+        <a href="Pages/Authentication/signin.html" class="login-btn">Sign Up</a>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+
+        <div class="user-icons" id="userIcons">
+          <a href="Pages/cart/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            
+          </a>
+
+          <i class="fa-solid fa-user"></i>
+        </div>
       </div>
     </header>
 
