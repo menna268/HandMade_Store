@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../CSS/cart.css">
+    
   </head>
   <body>
     <!--This Is Header-->
@@ -30,13 +32,15 @@
     <div class="cart-container">
       <h2>Cart</h2>
       <div class="cart-items">
-        <div class="cart-item">
+        <div class="cart-item" data-price="20">
           <img src="../../images/bags/bag.png" alt="Bag Picture" />
 
           <div class="product-info">
             <h3>Handmade Bag</h3>
 
             <p>Beautiful handmade bag with elegant design.</p>
+
+            <h5 class="item_price">20$</h5>
           </div>
 
           <div class="quantity">
@@ -45,17 +49,18 @@
             <button>+</button>
           </div>
 
-          <h4>$80</h4>
+          <h4 class="total-price">$20</h4>
         </div>
 
         <!-- Product 2 -->
-        <div class="cart-item">
+        <div class="cart-item" data-price="20">
           <img src="../../images/dresses/dress.png" alt="Dress Picture" />
 
           <div class="product-info">
             <h3>Handmade Dress</h3>
 
             <p>Elegant handmade dress for special occasions.</p>
+            <h5 class="item_price">20$</h5>
           </div>
 
           <div class="quantity">
@@ -64,27 +69,28 @@
             <button>+</button>
           </div>
 
-          <h4>$80</h4>
+          <h4 class="total-price">$20</h4>
         </div>
       </div>
     </div>
     <div class="cart-summary">
       <div class="summary-row">
-        <p>Subtotal</p>
-        <p>$220</p>
+        <p >Subtotal</p>
+        <p class="subtotal-price">$40</p>
       </div>
 
       <div class="summary-row">
         <p>Shipping</p>
-        <p>Free</p>
+        <p class="free">Free</p>
       </div>
 
       <div class="summary-row total">
-        <h3>Total</h3>
-        <h3>$220</h3>
+        <h3 >Total</h3>
+        <h3 class="final-total">$40</h3>
       </div>
 
       <button class="checkout-btn">Check Out</button>
     </div>
+     <script src="../../main.js"></script>
   </body>
 </html>

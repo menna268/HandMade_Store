@@ -60,6 +60,32 @@
   transform: translateY(-3px);
 }
 
+#toast {
+  position: fixed;
+
+  top: 20px;
+  right: 20px;
+
+  background-color: #e86f8a;
+  color: white;
+
+  padding: 15px 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+  font-size: 16px;
+
+  opacity: 0;
+
+  transition: 0.4s ease;
+
+  pointer-events: none;
+
+  z-index: 1000;
+}
+
 @media (max-width: 768px) {
 
   .product-container {

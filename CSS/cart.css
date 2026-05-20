@@ -1,0 +1,161 @@
+.cart-container {
+  width: 85%;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.cart-container h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #e86f8a;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.product-info p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f48da2;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quantity button:hover {
+  background-color: #e86f8a;
+  transform: scale(1.1);
+}
+
+.quantity span{
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.cart-item h4 {
+  font-size: 20px;
+  color: #222;
+  min-width: 60px;
+  text-align: right;
+}
+
+.cart-summary {
+  width: 85%;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.total {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.total h3 {
+  font-size: 22px;
+  color: #111;
+}
+
+.free{
+  color: #f48da2;
+  font-size: 18px;
+}
+
+h5{
+  font-weight: bold;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f48da2, #e86f8a);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(232,111,138,0.4);
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item h4 {
+    text-align: center;
+  }
+
+  .quantity {
+    justify-content: center;
+  }
+}
