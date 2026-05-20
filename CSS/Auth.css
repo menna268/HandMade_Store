@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .auth-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .auth-box {
