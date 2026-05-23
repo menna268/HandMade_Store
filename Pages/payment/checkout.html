@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="../../CSS/checkout.css" />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <p>Complete your order safely and securely.</p>
+
+    <main class="checkout-container">
+      <!-- Left: Form -->
+      <section class="checkout-form">
+        <h2>Billing Details</h2>
+        <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Address" required/>
+        <input type="text" placeholder="Phone" required/>
+
+        <div class="payment-box">
+          <h3>Payment Method</h3>
+
+          <p class="section-text">Choose your preferred payment method</p>
+
+          <label>
+            <input type="radio" name="payment" checked /> Cash on Delivery
+          </label>
+
+          <label> <input type="radio" name="payment" /> Credit Card </label>
+        </div>
+        <button class="place-order-btn">Place Order</button>
+        </form>
+      </section>
+
+      <!-- Right: Summary -->
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+
+        <div class="item">
+          <p>Bag</p>
+          <p>$50</p>
+        </div>
+
+        <div class="item">
+          <p>Dress</p>
+          <p>$50</p>
+        </div>
+
+        <hr />
+
+        <h3>Total: $100</h3>
+      </section>
+    </main>
+    <script src="../../main.js"></script>
+  </body>
+</html>

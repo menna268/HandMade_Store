@@ -108,4 +108,44 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+  // ================= CHECKOUT SUCCESS MESSAGE =================
+
+  const placeOrderBtn = document.querySelector(".place-order-btn");
+
+  if (placeOrderBtn) {
+    placeOrderBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const message = document.createElement("div");
+
+      message.classList.add("success-toast");
+
+      message.innerHTML = `
+      <span>✔</span>
+      Order placed successfully!
+    `;
+
+      document.body.appendChild(message);
+
+      setTimeout(() => {
+        message.classList.add("show");
+      }, 100);
+
+      setTimeout(() => {
+        message.classList.remove("show");
+
+        setTimeout(() => {
+          message.remove();
+        }, 300);
+      }, 3000);
+    });
+  }
 });
+
+const checkoutBtn = document.querySelector(".checkout-btn");
+
+if (checkoutBtn) {
+  checkoutBtn.addEventListener("click", () => {
+    window.location.href = "../../Pages/payment/checkout.html";
+  });
+}
