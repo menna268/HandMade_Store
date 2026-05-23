@@ -1,53 +1,61 @@
+/* ================= RESET ================= */
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+/* ================= BODY ================= */
 
 body {
   font-family: "Times New Roman", Times, serif;
   padding-top: 80px;
-
+  overflow-x: hidden;
 }
+
+/* ================= HEADER ================= */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
-  height: 50px;
+
+  padding: 15px 20px;
+  height: 70px;
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
   z-index: 1000;
 
   background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
-.logo img {
-  width: 70%;
-  height: 50%;
-  border-radius: 50%;
-  object-fit: contain;
-  cursor: pointer;
-  transition: 0.3s;
-}
+/* ================= LEFT + RIGHT ================= */
 
-.left-side {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
+.left-side,
 .right-side {
   display: flex;
   align-items: center;
-  gap: 15px;
-  justify-content: flex-end;
+  gap: 20px;
 }
+
+/* ================= LOGO ================= */
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ================= NAV LINKS ================= */
 
 .nav_links {
   list-style: none;
@@ -59,13 +67,14 @@ header {
   text-decoration: none;
   color: #333;
   font-size: 18px;
-  font-weight: 500;
   transition: 0.3s;
 }
 
 .nav_links li a:hover {
   color: #e86f8a;
 }
+
+/* ================= LOGIN BUTTON ================= */
 
 .login-btn {
   text-decoration: none;
@@ -80,21 +89,25 @@ header {
   background-color: #e86f8a;
 }
 
+/* ================= HERO IMAGE ================= */
+
 .hero-image {
-  width: 99%;
+  width: 100%;
   height: 420px;
   display: block;
+
   border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: 0.4s;
   object-fit: cover;
-  object-position: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease;
 }
 
 .hero-image:hover {
   transform: scale(1.01);
 }
+
+/* ================= CATEGORY LINKS ================= */
 
 .links {
   display: flex;
@@ -121,36 +134,41 @@ header {
   box-shadow: 0 0 20px rgba(232, 111, 138, 0.6);
 }
 
+/* ================= SEARCH BAR ================= */
+
 .searchbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+
   margin: 20px auto;
+  flex-wrap: wrap;
 }
 
 .searchbar input {
   width: 100%;
   max-width: 400px;
-  padding: 10px 15px;
+
+  padding: 12px;
   border: none;
   border-radius: 15px;
-  outline: none;
+
   font-size: 16px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  height: 50px;
 }
 
 .searchbar button {
   padding: 12px 18px;
+
   border: none;
   border-radius: 15px;
+
   background-color: #e86f8a;
   color: white;
-  font-size: 16px;
+
   cursor: pointer;
   transition: 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .searchbar button:hover {
@@ -158,25 +176,30 @@ header {
   background-color: #d94f68;
 }
 
+/* ================= PRODUCTS GRID ================= */
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
+
   padding: 40px;
 }
 
 .card {
   background: #fff;
   border-radius: 15px;
+
   padding: 15px;
   text-align: center;
+
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
   transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -194,10 +217,13 @@ header {
 
 .card button {
   padding: 10px 15px;
+
   border: none;
   border-radius: 20px;
+
   background-color: #e86f8a;
   color: white;
+
   cursor: pointer;
   transition: 0.3s;
 }
@@ -207,19 +233,25 @@ header {
   transform: scale(1.05);
 }
 
+/* ================= TITLES ================= */
+
 h2 {
   margin-left: 30px;
   margin-top: 20px;
-  padding: 15px;
+
   color: #e86f8a;
   font-size: 30px;
 }
 
+/* ================= FOOTER ================= */
+
 .footer {
   background-color: #e86f8a;
   color: white;
+
   text-align: center;
   padding: 25px 15px;
+
   margin-top: 50px;
 }
 
@@ -242,92 +274,69 @@ h2 {
   text-decoration: underline;
 }
 
-.footer h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.footer p {
-  margin: 5px 0;
-  font-size: 14px;
-}
-
-.copy {
-  margin-top: 10px;
-  font-size: 12px;
-  opacity: 0.9;
-}
+/* ================= USER SYSTEM ================= */
 
 .logout-btn {
-  padding: 20px;
   background-color: #e86f8a;
   color: white;
+
   border: none;
   padding: 8px 15px;
+
   border-radius: 20px;
   cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
-  display: none; 
-}
 
-.logout-btn:hover {
-  background-color: #d94f68;
-  transform: scale(1.05);
+  display: none;
 }
 
 .user-icons {
-  padding: 40px;
   display: none;
-  gap: 35px;
+  gap: 20px;
   align-items: center;
   color: #e86f8a;
 }
 
-.user-icons i {
-  color:#e86f8a;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+i {
+  color: #e86f8a;
 }
 
-.user-icons i:hover {
-  color: #d94f68;
-}
-
-
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
-
   header {
     flex-direction: column;
     height: auto;
-    gap: 15px;
+    gap: 10px;
+
+    padding: 10px;
   }
 
   .left-side,
   .right-side {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .nav_links {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .links {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     padding: 20px;
   }
 
-  .searchbar {
-    flex-direction: column;
+  .links li a:active {
+    transform: scale(0.95);
   }
 
   .searchbar input {
     width: 90%;
-    max-width: 300px;
   }
 
   .hero-image {
@@ -336,5 +345,9 @@ h2 {
 
   .products-grid {
     grid-template-columns: 1fr;
+  }
+
+  .user-icons {
+    padding: 10px;
   }
 }
