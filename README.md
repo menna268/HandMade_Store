@@ -28,7 +28,7 @@ This project simulates a real online store for handmade products with a clean UI
 
 ## 📸 Project Preview
 
-*(Add screenshots here later)*
+_(Add screenshots here later)_
 
 ---
 
@@ -70,4 +70,4 @@ This project simulates a real online store for handmade products with a clean UI
 ## 👩‍💻 Author
 
 **Your Name**  
-Front-End Developer  
+Front-End Developer
