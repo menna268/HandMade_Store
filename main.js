@@ -140,6 +140,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 3000);
     });
   }
+
+  // ================= BUY NOW SYSTEM =================
+
+  const buyNowButtons = document.querySelectorAll(".buy-now-btn");
+
+  buyNowButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      window.location.href = "../../Pages/payment/checkout.html";
+    });
+  });
 });
 
 const checkoutBtn = document.querySelector(".checkout-btn");
